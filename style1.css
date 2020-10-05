@@ -69,7 +69,11 @@ body {
   text-align: right;
 }
 
-.projects header > span > a:first-child {
+.projects header > span > a:not(:last-child) {
+  margin-right: 2em;
+}
+
+.openSource header > span > a:not(:last-child) {
   margin-right: 2em;
 }
 
@@ -198,6 +202,15 @@ body {
   }
 
   .projects > ol > li > header > span {
+    margin: .5em 0;
+    text-align: left;
+  }
+
+  .openSource header {
+    flex-direction: column;
+  }
+
+  .openSource > ul > li > header > span {
     margin: .5em 0;
     text-align: left;
   }
