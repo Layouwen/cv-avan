@@ -210,12 +210,14 @@ body {
     flex-direction: column;
   }
 
-  .openSource>ul>li>header>span {
-    margin: .5em 0;
-    text-align: left;
-  }
+  <<<<<<< HEAD .openSource>ul>li>header>span {
+    =======.openSource>ul>li>header>span {
+      >>>>>>>ec1f29510ab57c50ef5489d4fe88db98bb27e95e margin: .5em 0;
+      text-align: left;
+    }
 
-  .education>p span:last-child {
-    padding-right: 1em;
-  }
-}
+    <<<<<<< HEAD .education>p span:last-child {
+      =======.education>p span:last-child {
+        >>>>>>>ec1f29510ab57c50ef5489d4fe88db98bb27e95e padding-right: 1em;
+      }
+    }
