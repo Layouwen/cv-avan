@@ -13,26 +13,26 @@ body {
   right: 0;
 }
 
-.education > p {
+.education>p {
   display: flex;
 }
 
-.education > p span:nth-child(2),
-.education > p span:nth-child(3) {
+.education>p span:nth-child(2),
+.education>p span:nth-child(3) {
   flex: 1;
 }
 
-.education > p span:last-child {
+.education>p span:last-child {
   padding-right: 2em;
 }
 
 @media (min-width: 500px) {
-  .education > p span:first-child {
+  .education>p span:first-child {
     flex: 1;
   }
 }
 
-.education > p span:last-child {
+.education>p span:last-child {
   padding-left: 1em;
 }
 
@@ -45,31 +45,35 @@ body {
   color: red;
 }
 
-.projects > ol {
+.projects>ol {
   margin-top: 0;
   list-style-position: inside;
   padding: 0;
 }
 
-.projects > ol > li {
+.projects>ol>li {
   margin-bottom: 24px;
 }
 
-.projects > ol > li > header {
+.projects>ol>li>header {
   display: flex;
   flex-wrap: wrap;
 }
 
-.projects > ol > li h3 {
+.projects>ol>li h3 {
   width: 200px;
 }
 
-.projects > ol > li span {
+.projects>ol>li span {
   flex: 1;
   text-align: right;
 }
 
-.projects header > span > a:first-child {
+.projects header>span>a:not(:last-child) {
+  margin-right: 2em;
+}
+
+.openSource header>span>a:not(:last-child) {
   margin-right: 2em;
 }
 
@@ -84,24 +88,24 @@ body {
     }
 } */
 
-.skills > .wrapper {
+.skills>.wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-.skills > .wrapper > :first-child {
+.skills>.wrapper> :first-child {
   margin-right: 24px;
 }
 
-.skills > .wrapper > ul {
+.skills>.wrapper>ul {
   color: #666;
 }
 
-.skills > .wrapper strong {
+.skills>.wrapper strong {
   color: red;
 }
 
-.skills > .wrapper > ul > li {
+.skills>.wrapper>ul>li {
   line-height: 1.2;
   margin-bottom: 8px;
 }
@@ -112,7 +116,7 @@ body {
   right: 0;
 }
 
-.openSource > ul > li {
+.openSource>ul>li {
   margin-bottom: 24px;
 }
 
@@ -126,7 +130,7 @@ body {
   color: red;
 }
 
-.jobs > ol > li {
+.jobs>ol>li {
   margin: 12px 0;
 }
 
@@ -136,17 +140,17 @@ body {
   margin-bottom: 12px;
 }
 
-.jobs header > h3 {
+.jobs header>h3 {
   font-size: 18px;
   color: #333;
 }
 
-.jobs header > h4 {
+.jobs header>h4 {
   margin-left: 1em;
   font-size: 18px;
 }
 
-.jobs header > span {
+.jobs header>span {
   font-size: 18px;
   margin-left: auto;
 }
@@ -165,11 +169,11 @@ body {
     display: none;
   }
 
-  .education > p span:first-child {
+  .education>p span:first-child {
     width: 120px;
   }
 
-  .education > p span:nth-child(3) {
+  .education>p span:nth-child(3) {
     display: none;
   }
 
@@ -185,9 +189,9 @@ body {
     flex-direction: column;
   }
 
-  .jobs header > h3,
-  .jobs header > h4,
-  .jobs header > span {
+  .jobs header>h3,
+  .jobs header>h4,
+  .jobs header>span {
     margin: 0;
   }
 }
@@ -197,12 +201,21 @@ body {
     flex-direction: column;
   }
 
-  .projects > ol > li > header > span {
+  .projects>ol>li>header>span {
     margin: .5em 0;
     text-align: left;
   }
 
-  .education > p span:last-child {
+  .openSource header {
+    flex-direction: column;
+  }
+
+  .openSource>ul>li>header>span {
+    margin: .5em 0;
+    text-align: left;
+  }
+
+  .education>p span:last-child {
     padding-right: 1em;
   }
 }

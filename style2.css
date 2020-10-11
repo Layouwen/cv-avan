@@ -1,0 +1,179 @@
+ul {
+  padding: 1em;
+  margin-top: 0;
+  /* list-style: none; */
+}
+
+strong {
+  color: #333;
+}
+
+body {
+  margin: 0;
+  font: 14px/1.5 Arial;
+  color: #666;
+  background: #fff;
+}
+
+.layout {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#page {
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+header {
+
+  background: #3c3c3c;
+  width: 100%;
+  text-align: center;
+  padding: 60px 0 10px 0;
+  color: #fff;
+}
+
+header>h1 {
+  font-size: 30px;
+  margin-bottom: 0;
+}
+
+header>p {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0;
+}
+
+aside {
+  width: 240px;
+  border-right: 1px solid #ccc;
+  position: relative;
+  padding-top: 100px;
+}
+
+aside .avatar {
+  text-align: center;
+  position: absolute;
+  top: -80px;
+  width: 100%;
+}
+
+aside .avatar img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #ccc;
+}
+
+
+section {
+  border-bottom: 1px solid #ccc;
+  margin: 30px 20px 0 20px;
+  padding-bottom: 20px;
+}
+
+section h2 {
+  color: #5c99ca;
+  font-size: 16px;
+}
+
+section h3 {
+  margin-bottom: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+section a {
+  color: #333;
+}
+
+section>.item>p {
+  display: flex;
+}
+
+section>.item>p>span:not(:last-child) {
+  flex: 1;
+}
+
+.personal .item span:first-child {
+  display: inline-block;
+  width: 80px;
+}
+
+.personal .item span:last-child::before {
+  content: ':';
+  margin-right: 10px;
+}
+
+.skills .item {
+  display: flex;
+  align-items: center;
+}
+
+.skills .keyword {
+  width: 80px;
+}
+
+.skills .rule {
+  flex: 1;
+  height: 4px;
+  background: #ccc;
+}
+
+.skills .rule i {
+  display: block;
+  width: 10%;
+  height: 4px;
+  background: #000;
+}
+
+.contact .item {
+  display: flex;
+  align-items: center;
+}
+
+.contact svg {
+  width: 25px;
+  height: 25px;
+}
+
+.contact .item span {
+  margin-left: 10px;
+}
+
+main {
+  flex: 1;
+  min-height: calc(100vh - 162px);
+}
+
+/* @media (max-width: 768px) {
+    
+    header {
+        padding-top: 20px;
+        padding-bottom: 90px;
+    }
+
+    aside {
+        width: 100%;
+        padding-top: 0px;
+    }
+
+    aside .avatar img {
+        width: 100px;
+        height: 100px;
+    }
+
+    section>.item>p>span:nth-child(3) {
+        display: none;
+    }
+
+    section>.item>p>span:last-child {
+        padding-left: 20px;
+    }
+} */
