@@ -56,6 +56,7 @@ article {
 }
 
 .jobs strong {
-  color: red;
+  color: #000;
+  font-weight: bold;
 }
 
