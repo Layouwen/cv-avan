@@ -3,6 +3,10 @@ body {
   margin: 20px 0;
 }
 
+.phone {
+  display: none;
+}
+
 .bio {
   position: relative;
 }
@@ -157,14 +161,6 @@ body {
     display: none;
   }
 
-  .education > p span:first-child {
-    width: 120px;
-  }
-
-  .education > p span:nth-child(3) {
-    display: none;
-  }
-
   .skills .wrapper {
     flex-direction: column;
   }
@@ -203,7 +199,11 @@ body {
     text-align: left;
   }
 
-  .education > p span:last-child {
-    padding-right: 1em;
+  .pc {
+    display: none;
+  }
+
+  .phone {
+    display: block;
   }
 }
